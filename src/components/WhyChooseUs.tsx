@@ -2,6 +2,7 @@
 import React from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import Image from "next/image";
+import '../global.css'
 
 const musicSchoolContent = [
     {
@@ -39,7 +40,7 @@ const musicSchoolContent = [
 
 function WhyChooseUs() {
   return (
-    <div>
+    <div className="scrollbar-hide">
         <StickyScroll content={musicSchoolContent} />
     </div>
   )
